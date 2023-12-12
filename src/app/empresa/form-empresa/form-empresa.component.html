@@ -1,0 +1,47 @@
+<div class="container d-flex justify-content-center">
+<div class="card p-4 mt-5 forms">
+    <form class="row g-3 needs-validation " novalidate [formGroup]="form">
+        <div class="col-sm-12">
+            <label for="nome" class="form-label">Nome do Empresa</label>
+            <input type="text" class="form-control" id="nome" placeholder="Nome do Empresa" formControlName="nome">
+            <div class="invalid-feedback">
+                Informe o nome do Empresa!!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="cnpj" class="form-label">Cnpj do Empresa</label>
+            <input type="text" class="form-control" id="cnpj" placeholder="cnpj do Empresa" formControlName="cnpj">
+            <div class="invalid-feedback">
+                Informe o Cnpj do Empresa!!!
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <label for="endereco" class="form-label">Endereco do Empresa</label>
+            <input type="text" class="form-control" id="endereco" placeholder="endereco do Empresa" formControlName="endereco">
+            <div class="invalid-feedback">
+                Informe o endereco do Empresa!!!
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <label for="socios" class="form-label">Socios do Empresa</label>
+            <input type="text" class="form-control" id="socios" placeholder="socios do Empresa"
+                formControlName="socios">
+            <div class="invalid-feedback">
+                Informe o socios do Empresa!!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="faturamento" class="form-label">Faturamento do Empresa</label>
+            <input type="text" class="form-control" id="faturamento" placeholder="faturamento do Empresa"
+                formControlName="faturamento">
+            <div class="invalid-feedback">
+                Informe o faturamento do Empresa!!!
+            </div>
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+            <button class="btn-salvar me-2" type="submit" (click)="Salvar()">Salvar</button>
+            <button class="btn-cancelar" type="submit" (click)="Cancelar()">Cancelar</button>
+        </div>
+    </form>
+</div>
+</div>

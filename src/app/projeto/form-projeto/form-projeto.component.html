@@ -1,0 +1,47 @@
+<div class="container d-flex justify-content-center">
+<div class="card p-4 mt-5 forms">
+    <form class="row g-3 needs-validation" novalidate [formGroup]="form">
+        <div class="col-sm-12">
+            <label for="nome" class="form-label">Nome do Projeto</label>
+            <input type="text" class="form-control" id="nome" placeholder="Nome do projeto" formControlName="nome">
+            <div class="invalid-feedback">
+                Informe o nome do projeto!!!
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <label for="descricao" class="form-label">Descricao do projeto</label>
+            <input type="text" class="form-control" id="descricao" placeholder="descricao do projeto" formControlName="descricao">
+            <div class="invalid-feedback">
+                Informe o descricao do projeto!!!
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <label for="quantidadeparticipante" class="form-label">Qtd de Participante</label>
+            <input type="number" class="form-control" id="quantidadeparticipante" placeholder="quantidadeparticipante do projeto" formControlName="quantidadeparticipante">
+            <div class="invalid-feedback">
+                Informe o quantidade de participante do projeto!!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="responsavel" class="form-label">Responsavel do projeto</label>
+            <input type="text" class="form-control" id="responsavel" placeholder="responsavel do projeto"
+                formControlName="responsavel">
+            <div class="invalid-feedback">
+                Informe o responsavel do projeto!!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="custo" class="form-label">Custo do projeto</label>
+            <input type="number" class="form-control" id="custo" placeholder="custo do projeto"
+                formControlName="custo">
+            <div class="invalid-feedback">
+                Informe o custo do projeto!!!
+            </div>
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+            <button class="btn-salvar me-2" type="submit" (click)="Salvar()">Salvar</button>
+            <button class="btn-cancelar" type="submit" (click)="Cancelar()">Cancelar</button>
+        </div>
+    </form>
+</div>
+</div>

@@ -1,0 +1,47 @@
+<div class="container d-flex justify-content-center">
+<div class="card p-4 mt-5 forms">
+    <form class="row g-3 needs-validation" novalidate [formGroup]="form">
+        <div class="col-sm-12">
+            <label for="nome" class="form-label">Nome do funcionario</label>
+            <input type="text" class="form-control" id="nome" placeholder="Nome do funcionario" formControlName="nome">
+            <div class="invalid-feedback">
+                Informe o nome do funcionario!!!
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <label for="cargo" class="form-label">Cargo do funcionario</label>
+            <input type="text" class="form-control" id="cargo" placeholder="cargo do funcionario" formControlName="cargo">
+            <div class="invalid-feedback">
+                Informe o cargo do funcionario!!!
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <label for="salario" class="form-label">Salario do funcionario</label>
+            <input type="number" class="form-control" id="salario" placeholder="salario do funcionario" formControlName="salario">
+            <div class="invalid-feedback">
+                Informe o salario do funcionario!!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="areaatuacao" class="form-label">Área de Atuação</label>
+            <input type="text" class="form-control" id="areaatuacao" placeholder="areaatuacao do funcionario"
+                formControlName="areaatuacao">
+            <div class="invalid-feedback">
+                Informe o areaatuacao do funcionario!!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="localtrabalho" class="form-label">localtrabalho do funcionario</label>
+            <input type="text" class="form-control" id="localtrabalho" placeholder="localtrabalho do funcionario"
+                formControlName="localtrabalho">
+            <div class="invalid-feedback">
+                Informe o local de Trabalho!!!
+            </div>
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+            <button class="btn-salvar me-2" type="submit" (click)="Salvar()">Salvar</button>
+            <button class="btn-cancelar" type="submit" (click)="Cancelar()">Cancelar</button>
+        </div>
+    </form>
+</div>
+</div>

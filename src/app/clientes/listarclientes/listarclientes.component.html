@@ -1,0 +1,39 @@
+
+<div class="card mt-3">
+    <div class="d-flex justify-content-between align-items-center p-3 menu">
+        <h1 class="text-white">Cliente</h1>
+        <button class="btn"  [routerLink]="['novo']">Novo Cliente</button>
+    </div>
+    
+    <div class="card-body ">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nome</th>
+                    <th>Cpf</th>
+                    <th>Rg</th>
+                    <th>Endereco</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cliente of cliente">
+                    <td>{{cliente.id }}</td>
+                    <td>{{cliente.nome }}</td>
+                    <td>{{cliente.cpf }}</td>
+                    <td>{{cliente.rg}}</td>
+                    <td>{{cliente.endereco}}</td>
+                    <td>{{cliente.email}}</td>
+                    <td> 
+                        <span class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary  me-2" (click)="Editar(cliente.id)">Atualizar</button>
+                            <button type="button" class="btn btn-danger" (click)="Excluir(cliente.id)">Deletar</button>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>  
+    

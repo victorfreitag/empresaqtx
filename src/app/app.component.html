@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg menu ">
+  <div class="container-fluid">
+    <img [routerLink]="['/inicio']" routerLinkActive="active" src="../assets/logo (2).png" alt="">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse menu" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link text-white" [routerLink]="['/fornecedor']">Fornecedor</a>
+        <a class="nav-link text-white" [routerLink]="['/cliente']">Cliente</a>
+        <a class="nav-link text-white" [routerLink]="['/departamento']">Departamento</a>
+        <a class="nav-link text-white" [routerLink]="['/empresa']">Empresa</a>
+        <a class="nav-link text-white" [routerLink]="['/funcionario']">Funcionario</a>
+        <a class="nav-link text-white" [routerLink]="['/projeto']">Projeto</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

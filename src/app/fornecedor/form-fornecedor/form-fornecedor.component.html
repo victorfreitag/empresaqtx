@@ -1,0 +1,51 @@
+<div class="container d-flex justify-content-center">
+
+    <div class="card p-4 mt-5 forms">
+        <form class="row g-3 needs-validation" novalidate [formGroup]="form">
+            <div class="col-sm-12">
+                <label for="nome" class="form-label">Nome do Fornecedor</label>
+                <input type="text" class="form-control" id="nome" placeholder="Nome do fornecedor"
+                    formControlName="nome">
+                <div class="invalid-feedback">
+                    Informe o nome do Fornecedor!!!
+                </div>
+            </div>
+
+            <div class="col-sm-8">
+                <label for="cnpj" class="form-label">Cnpj do Fornecedor</label>
+                <input type="text" class="form-control" id="cnpj" placeholder="Cnpj do fornecedor"
+                    formControlName="cnpj">
+                <div class="invalid-feedback">
+                    Informe o Cnpj do Fornecedor!!!
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <label for="ie" class="form-label">ie do Fornecedor</label>
+                <input type="text" class="form-control" id="ie" placeholder="ie do fornecedor" formControlName="ie">
+                <div class="invalid-feedback">
+                    Informe o ie do Fornecedor!!!
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <label for="endereco" class="form-label">Endereco do Fornecedor</label>
+                <input type="text" class="form-control" id="endereco" placeholder="endereco do fornecedor"
+                    formControlName="endereco">
+                <div class="invalid-feedback">
+                    Informe o endereco do Fornecedor!!!
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <label for="email" class="form-label">Email do Fornecedor</label>
+                <input type="text" class="form-control" id="email" placeholder="email do fornecedor"
+                    formControlName="email">
+                <div class="invalid-feedback">
+                    Informe o email do fornecedor!!!
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-end">
+                <button class="btn-salvar me-2" type="submit" (click)="Salvar()">Salvar</button>
+                <button class="btn-cancelar" type="submit" (click)="Cancelar()">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>

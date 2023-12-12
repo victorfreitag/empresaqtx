@@ -1,0 +1,21 @@
+
+.forms{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+}
+.divisao{
+    display: flex;  
+}
+.btn-salvar{
+    width: 90px;
+    background-color:#20136c ;
+    color: white;
+    border-radius: 15px;
+}
+.btn-cancelar{
+    width: 90px;
+    background-color: #03103D;
+    color: white;
+    border-radius: 15px;
+}
